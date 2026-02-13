@@ -42,6 +42,7 @@ landing-page/
 ```bash
 git clone https://github.com/Abdallah-Abdelnour/Design-to-HTML-CSS-JS.git
 cd Design-to-HTML-CSS-JS
+```
 
 2. Lancer Jenkins sur une VM ou un serveur :
 Via Docker :
