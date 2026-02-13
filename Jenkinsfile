@@ -7,12 +7,6 @@ pipeline {
   
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Abdallah-Abdelnour/Design-to-HTML-CSS-JS.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $IMAGE_NAME .'
