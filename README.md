@@ -47,6 +47,7 @@ cd Design-to-HTML-CSS-JS
 2. Lancer Jenkins sur une VM ou un serveur :
 Via Docker :
 
+```bash
 docker run -d \
   -p 8080:8080 \
   -p 50000:50000 \
@@ -54,9 +55,11 @@ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   --name jenkins \
   jenkins/jenkins:lts
+```
+
 
 3. Ajouter credentials DockerHub et GitHub token dans Jenkins
 
 4. Créer un Pipeline Job et lier le repo GitHub avec le Jenkinsfile
 
-5. Vérifier le pipeline : chaque git push déclenche automatiquement le build et le push DockerHub
+5. Vérifier le pipeline : chaque `git push` déclenche automatiquement le build et le push DockerHub
